@@ -1,0 +1,289 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Weather_Data_Report_Bot" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1073.33333333333,548" sap2010:WorkflowViewState.IdRef="Weather_Data_Report_Bot_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="76">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
+      <x:String>System.Activities.DynamicUpdate</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Runtime.InteropServices</x:String>
+      <x:String>UiPath.DataTableUtilities</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.Excel.Activities.Business</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="24">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence sap:VirtualizedContainerService.HintSize="476,393.333333333333" sap2010:WorkflowViewState.IdRef="Sequence_5">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="666.666666666667,1358" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+      <TryCatch.Try>
+        <Sequence DisplayName="Weather_Data_Report_Bot" sap:VirtualizedContainerService.HintSize="628,1123.33333333333" sap2010:WorkflowViewState.IdRef="Sequence_1">
+          <Sequence.Variables>
+            <Variable x:TypeArguments="x:Int32" Name="index">
+              <Variable.Default>
+                <Literal x:TypeArguments="x:Int32" Value="2" />
+              </Variable.Default>
+            </Variable>
+          </Sequence.Variables>
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <ui:ExcelApplicationScope Password="{x:Null}" DisplayName="Excel Application Scope" sap:VirtualizedContainerService.HintSize="590.666666666667,806" sap2010:WorkflowViewState.IdRef="ExcelApplicationScope_1" InstanceCachePeriod="3000" WorkbookPath="WDRB.xlsx">
+            <ui:ExcelApplicationScope.Body>
+              <ActivityAction x:TypeArguments="ui:WorkbookApplication">
+                <ActivityAction.Argument>
+                  <DelegateInArgument x:TypeArguments="ui:WorkbookApplication" Name="ExcelWorkbookScope" />
+                </ActivityAction.Argument>
+                <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="556.666666666667,697.333333333333" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                  <Sequence.Variables>
+                    <Variable x:TypeArguments="sd:DataTable" Name="RPAExcel" />
+                    <Variable x:TypeArguments="x:String" Name="weather" />
+                  </Sequence.Variables>
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <ui:ExcelReadRange AddHeaders="True" DataTable="[RPAExcel]" DisplayName="Read Range" sap:VirtualizedContainerService.HintSize="514.666666666667,58.6666666666667" sap2010:WorkflowViewState.IdRef="ExcelReadRange_1" SheetName="Sheet1">
+                    <ui:ExcelReadRange.Range>
+                      <InArgument x:TypeArguments="x:String">
+                        <Literal x:TypeArguments="x:String" Value="" />
+                      </InArgument>
+                    </ui:ExcelReadRange.Range>
+                  </ui:ExcelReadRange>
+                  <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[RPAExcel]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="514.666666666667,506.666666666667" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+                    <ui:ForEachRow.Body>
+                      <ActivityAction x:TypeArguments="sd:DataRow">
+                        <ActivityAction.Argument>
+                          <DelegateInArgument x:TypeArguments="sd:DataRow" Name="Row" />
+                        </ActivityAction.Argument>
+                        <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="480.666666666667,386.666666666667" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="438.666666666667,294.666666666667" sap2010:WorkflowViewState.IdRef="TryCatch_2">
+                            <TryCatch.Try>
+                              <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Always" DisplayName="Use Browser Edge: Google" sap:VirtualizedContainerService.HintSize="200,52" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="1b82ea60-7957-448a-9f08-dcf1bbb3f54a" Version="V1">
+                                <uix:NApplicationCard.Body>
+                                  <ActivityAction x:TypeArguments="x:Object">
+                                    <ActivityAction.Argument>
+                                      <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                                    </ActivityAction.Argument>
+                                    <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="376,1665.33333333333" sap2010:WorkflowViewState.IdRef="Sequence_2">
+                                      <Sequence.Variables>
+                                        <Variable x:TypeArguments="x:String" Name="capital" />
+                                      </Sequence.Variables>
+                                      <sap:WorkflowViewStateService.ViewState>
+                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                        </scg:Dictionary>
+                                      </sap:WorkflowViewStateService.ViewState>
+                                      <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'TEXTAREA APjFqb'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="334,218.666666666667" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="1b82ea60-7957-448a-9f08-dcf1bbb3f54a" Text="[Row(0).ToString + &quot; Capital &quot;]" Version="V1">
+                                        <uix:NTypeInto.Target>
+                                          <uix:TargetAnchorable BrowserURL="https://www.google.co.in/" DesignTimeRectangle="895, 716, 666, 41" ElementType="InputBox" FriendlyName="'TEXTAREA APjFqb'" FullSelectorArgument="&lt;webctrl tag='TEXTAREA' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TEXTAREA' type='search' aaname='Search' /&gt;" Guid="acfa4901-9f76-40f2-8a3d-d1574e617a49" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAp4AAAAtCAYAAAAHt2thAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAEESURBVHhe7daxCYBAAMBAR1H4/ecSwRlesBAH0FRXXJUFsqzbmAAA8DfjCQBAwngCAJAwngAAJIwnAACJZzz347y9IwAAfMV4AgCQMJ4AACSMJwAACeMJAEDCeAIAkDCeAAAkjCcAAAnjCQBAwngCAJAwngAAJIwnAAAJ4wkAQMJ4AgCQMJ4AACSMJwAACeMJAEDCeAIAkDCeAAAkjCcAAAnjCQBAwngCAJAwngAAJIwnAAAJ4wkAQMJ4AgCQMJ4AACSe8QQAgD8ZTwAAEsYTAICE8QQAIGE8AQBIGE8AABLGEwCAhPEEACBhPAEASBhPAAASxhMAgITxBAAgYTwBAAiMeQFlik/xIRiBHAAAAABJRU5ErkJggg==" InformativeScreenshot="94b5eee8ef41a2bfdb7677621be8a47b.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Google' /&gt;" SearchSteps="FuzzySelector, Image" />
+                                        </uix:NTypeInto.Target>
+                                      </uix:NTypeInto>
+                                      <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" DisplayName="Send Hotkey 'TEXTAREA  APjFqb'" sap:VirtualizedContainerService.HintSize="334,119.333333333333" sap2010:WorkflowViewState.IdRef="SendHotkey_1" Key="enter" KeyModifiers="None" SpecialKey="True">
+                                        <ui:SendHotkey.Target>
+                                          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="11c1fd93-9879-4306-81c6-3f963cfe7bda" Selector="&lt;webctrl tag='TEXTAREA' /&gt;">
+                                            <ui:Target.TimeoutMS>
+                                              <InArgument x:TypeArguments="x:Int32" />
+                                            </ui:Target.TimeoutMS>
+                                            <ui:Target.WaitForReady>
+                                              <InArgument x:TypeArguments="ui:WaitForReady" />
+                                            </ui:Target.WaitForReady>
+                                          </ui:Target>
+                                        </ui:SendHotkey.Target>
+                                      </ui:SendHotkey>
+                                      <uix:NGetText DisplayName="Get Text 'Capital'" sap:VirtualizedContainerService.HintSize="334,157.333333333333" sap2010:WorkflowViewState.IdRef="NGetText_1" ScopeIdentifier="1b82ea60-7957-448a-9f08-dcf1bbb3f54a" Version="V1">
+                                        <uix:NGetText.Target>
+                                          <uix:TargetAnchorable BrowserURL="https://www.google.co.in/search?q=india+capital&amp;sca_esv=573218915&amp;sxsrf=AM9HkKn2FUav5bjfM02VO5gVkPTa8oTD5g%3A1697214963398&amp;source=hp&amp;ei=83EpZdWUFuC7seMPjsy4kAw&amp;iflsig=AO6bgOgAAAAAZSmAA_TIHjXtbDPmh5eQ0UGmDCCU0Aec&amp;ved=0ahUKEwiV2v63uvOBAxXgXWwGHQ4mDsIQ4dUDCAo&amp;uact=5&amp;oq=india+capital&amp;gs_lp=Egdnd3Mtd2l6Ig1pbmRpYSBjYXBpdGFsMggQABiABBixAzIIEAAYgAQYsQMyBRAAGIAEMggQABiABBixAzIFEAAYgAQyBRAAGIAEMgsQLhiABBixAxiDATIFEAAYgAQyBRAAGIAEMgUQABiABEiUkgVQ0_QEWO2PBXABeACQAQCYAXKgAb0JqgEDOS40uAEDyAEA-AEBqAIKwgIHECMY6gIYJ8ICBxAjGIoFGCfCAgcQLhiKBRgnwgIIEC4YigUYkQLCAg4QABiKBRixAxiDARiRAsICCxAAGIAEGLEDGIMBwgIOEC4YigUYsQMYgwEY5QTCAggQABiKBRiRAsICDRAAGIoFGLEDGIMBGEPCAgcQABiKBRhDwgILEAAYigUYsQMYgwHCAhAQABiKBRixAxiDARjJAxhDwgIIEAAYigUYkgPCAg0QLhiKBRixAxiDARhDwgIREC4YgAQYsQMYgwEYxwEY0QPCAhMQLhiKBRixAxiDARjHARjRAxhDwgILEC4YgwEYsQMYgATCAg0QLhiDARixAxiKBRhDwgIHEC4YigUYQ8ICDhAuGIMBGLEDGIoFGJECwgINEAAYgAQYFBiHAhixAw&amp;sclient=gws-wiz" DesignTimeRectangle="356, 868, 978, 60" FriendlyName="'New Delhi'" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;block-component&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' parentid='rso' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' parentid='rso' tag='DIV' aaname='' /&gt;" Guid="5f85c199-3247-4b6d-8c79-053f28666b2b" InformativeScreenshot="7a88c9af7f20433ab5193c13729c30cb.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='india capital - Google Search' /&gt;" SearchSteps="FuzzySelector">
+                                            <uix:TargetAnchorable.Anchors>
+                                              <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                                <uix:Target DesignTimeRectangle="426, 823, 65, 23" ElementType="Text" FriendlyName="'Capital'" FullSelectorArgument="&lt;webctrl aaname='Capital' parentid='rso' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Capital' parentid='rso' tag='SPAN' type='' check:text='Capital' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAEUAAAAbCAYAAAAqCUKuAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAQZSURBVFhH7VdNaxpdFH5/Sgr9B7OY7VsoCCkFA4GEdBECwkCl3TSLkC7eBhpcxAoNLpIsGoQQoWDIQgIyEBwQkYJCiCI4CGYQDC/0Nzw9d+bemTvOFceUpF3M4kE598y55zxzvuafpWfPkSCMhBQFElIUSEhRICFFgYQUBWaQ8hJGoQLzZgRn8hP3/zNM4HTbuChm8a/ymcfDF4vdP0D5rSwnH4tNXBzIsgVRaLqx9b5nQ/IoKek8qjYnYjKBfdOEeV2H+WPgE+R0zvFen3ruEaEixSgPXF+sQlh3IcQiZTkPa+wF3qvuY3U68Bc7KHc5MVYeKfnsiWF8fxJSdOyZEx7wIV5LSiGkDzlxI1x8UJw/EZ6GFJ2CJQWWpqWtQEGF7UsqpeEA5sFmSK6t7aPUoDOebS7BdwNYZ1NZx52xCjq2vtbRE/rjCXrXxzBeSLqEcPlkUe4H9gUCcnSsfjqH1aUe6J+zfthE6dM6NMnufFI+1z0j/QoMSSEutHcV9LgToT7EZY65HzjEnelYTffc6bdJv4nOkAdh17C3HNgOk7KJ3GUdrb6X1XaH7qG7Ttys1fGeZ9D9ZIROwzsTuowc87Pu251LSuqo7T1IpSMrxMMrFFvepVZhJXyWPkbLdaiJnJBxZ5h+6ygjvb0VIoAHe7nj21A2WlX5LPO7xk18SUtywms/vnwgn0eKuORhpNDEGlIwyiwT6U6OCpkgpXuOrZAuwQ+sjj0ui01KrgabSnE6SBdveSbL8c0jRfvKHX0QKQG01Do2jP+QK56ifEUlYYvUjZKidJ7Ko3TDSTA8WWxSfOhIrW3C2M2jeFJBtXHrkhWJbx4pS7u13+spmUOYfu0GcOwBdyhKyqzJMU1CfFKmGrcP2rf6tIiy/wuR8mwfpmts/vTRcnXYNFValTxWmczfb2h6XJ0jt5vFxpsVvvnOLp9eWZUpQv8WpTeeLC4pqQOvcd+PB6ie5fHR2MRG+qV3/pDyYdi+HLlKoUkRQYanNxk7y3gybty5zkef80e9oqe0jqMLoOgpdzV85LK4pHh6NGFy0oTh0MSdi5Iyf6PN4qTBS2RITotzcWHnNLz06evk6OyeEplWkr7sqJIUvua3jl5N6dGo/xaegNqaWDgJC5NC0DLHsO64Afr26f3wZr0lfxzeUYBr0tuQyLwf3sJiOwprbq7+CLa7f0hBcWccWtbYr7fXtINe0K2Evq1UpCxRqbi6VCrsPran+OXj2/T8dvVs8oP9yj0zLiku6I3tndXdySEuYXDsW1S/7UQziMAabZURJ/THtDxdnWKbyBOp7r9V35kd+tKVN1rF9ktQkqJnUGwE93VKbLtmjbYmTTzZZ9Gr2iiKxXAhUh4bM5z5W5CQokBCigIJKQr8GVL+ciSkRPAcvwCB3pIDBF6UUwAAAABJRU5ErkJggg==" SearchSteps="FuzzySelector, Image" />
+                                              </scg:List>
+                                            </uix:TargetAnchorable.Anchors>
+                                          </uix:TargetAnchorable>
+                                        </uix:NGetText.Target>
+                                        <uix:NGetText.Text>
+                                          <OutArgument x:TypeArguments="x:String">[capital]</OutArgument>
+                                        </uix:NGetText.Text>
+                                      </uix:NGetText>
+                                      <ui:ExcelWriteCell Cell="[&quot;B&quot;+index.ToString]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="334,86.6666666666667" sap2010:WorkflowViewState.IdRef="ExcelWriteCell_1" SheetName="Sheet1" Text="[capital]" />
+                                      <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'TEXTAREA APjFqb'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="334,218.666666666667" sap2010:WorkflowViewState.IdRef="NTypeInto_2" ScopeIdentifier="1b82ea60-7957-448a-9f08-dcf1bbb3f54a" Text="[Row(0).ToString + &quot; Weather&quot;]" Version="V1">
+                                        <uix:NTypeInto.Target>
+                                          <uix:TargetAnchorable BrowserURL="https://www.google.co.in/" DesignTimeRectangle="895, 716, 666, 41" ElementType="InputBox" FriendlyName="'TEXTAREA APjFqb'" FullSelectorArgument="&lt;webctrl tag='TEXTAREA' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TEXTAREA' type='search' aaname='Search' /&gt;" Guid="e95d02fd-5a59-474b-8151-3b9cf7336726" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAp4AAAAtCAYAAAAHt2thAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAADvSURBVHhe7dYxDQAgEAAxpEDy/i2CCm7qUA9d+8wFAIDfxBMAgIR4AgCQEE8AABLiCQBAQjwBAEiIJwAACfEEACAhngAAJMQTAICEeAIAkBBPAAAS4gkAQEI8AQBIiCcAAAnxBAAgIZ4AACTEEwCAhHgCAJAQTwAAEuIJAEBCPAEASIgnAAAJ8QQAICGeAAAkxBMAgIR4AgCQEE8AABLiCQBAQjwBAEiIJwAACfEEACAhngAAJMQTAICEeAIAkBBPAAAS4gkAQEI8AQBIiCcAAAnxBAAgIZ4AACTEEwCAhHgCAJAQTwAAEuIJAEBg7gPPkdDmX4aMxAAAAABJRU5ErkJggg==" InformativeScreenshot="444cc288535eeb26edc1e2e2a1a4e6c8.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Google' /&gt;" SearchSteps="FuzzySelector, Image" />
+                                        </uix:NTypeInto.Target>
+                                      </uix:NTypeInto>
+                                      <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" DisplayName="Send Hotkey" sap:VirtualizedContainerService.HintSize="334,119.333333333333" sap2010:WorkflowViewState.IdRef="SendHotkey_2" Key="enter" KeyModifiers="None" SpecialKey="True">
+                                        <ui:SendHotkey.Target>
+                                          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" Id="234ae9be-cda7-4e2d-a060-c696329bd854">
+                                            <ui:Target.TimeoutMS>
+                                              <InArgument x:TypeArguments="x:Int32" />
+                                            </ui:Target.TimeoutMS>
+                                            <ui:Target.WaitForReady>
+                                              <InArgument x:TypeArguments="ui:WaitForReady" />
+                                            </ui:Target.WaitForReady>
+                                          </ui:Target>
+                                        </ui:SendHotkey.Target>
+                                      </ui:SendHotkey>
+                                      <uix:NGetText DisplayName="Get Text 'Weather'" sap:VirtualizedContainerService.HintSize="334,157.333333333333" sap2010:WorkflowViewState.IdRef="NGetText_2" ScopeIdentifier="1b82ea60-7957-448a-9f08-dcf1bbb3f54a" Version="V1">
+                                        <uix:NGetText.Target>
+                                          <uix:TargetAnchorable BrowserURL="https://www.google.co.in/search?q=afganistan+weather&amp;sca_esv=573232648&amp;sxsrf=AM9HkKlDro3NKXgf9vU8vXlNyybRaQc4VA%3A1697215808594&amp;ei=QHUpZf_vI-_c2roPvb-GiA8&amp;ved=0ahUKEwj_j4PLvfOBAxVvrlYBHb2fAfEQ4dUDCBA&amp;uact=5&amp;oq=afganistan+weather&amp;gs_lp=Egxnd3Mtd2l6LXNlcnAiEmFmZ2FuaXN0YW4gd2VhdGhlcjITEAAYigUYsQMYgwEYkQIYRhiAAjIIEAAYigUYkQIyBxAAGIAEGAoyBxAAGIAEGAoyBxAAGIAEGAoyBxAAGIAEGAoyBxAAGIAEGAoyCBAAGAcYHhgKMgcQABiABBgKMgcQABiABBgKSPM7UPAKWI04cAJ4AZABAJgBfKAB1QyqAQQxMC42uAEDyAEA-AEBwgINEAAYRxjWBBjJAxiwA8ICChAAGEcY1gQYsAPCAgsQABiKBRiSAxiwA8ICBhAAGAcYHsICDRAAGIoFGLEDGIMBGEPCAgcQABiKBRhDwgIKEAAYigUYsQMYQ8ICBRAAGIAEwgILEAAYBxgeGPEEGArCAgoQABgHGB4YDxgKwgINEAAYCBgHGB4Y8QQYCsICCBAAGAgYBxgewgIIEAAYBRgHGB7CAgcQABgNGIAEwgIIEAAYBRgeGA3CAg0QABgFGAcYHhjxBBgKwgIKEAAYBRgeGA0YCsICDBAAGA0YgAQYRhiAAsICDRAAGA0YgAQYsQMYgwHiAwQYACBBiAYBkAYK&amp;sclient=gws-wiz-serp" DesignTimeRectangle="1277, 654, 57, 27" ElementType="Text" FriendlyName="'Clear'" FullSelectorArgument="&lt;webctrl id='wob_dc' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl id='wob_dc' tag='SPAN' type='' /&gt;" Guid="ca6f7d23-11b9-43f0-9328-42b8f2b6e834" InformativeScreenshot="82dc4a6464623e9d4a96985c992a1a81.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='afganistan weather - Google Search' /&gt;" SearchSteps="FuzzySelector">
+                                            <uix:TargetAnchorable.Anchors>
+                                              <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                                <uix:Target DesignTimeRectangle="845, 584, 489, 39" ElementType="Text" FriendlyName="'Weather'" FullSelectorArgument="&lt;webctrl id='wob_loc' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl id='wob_loc' tag='DIV' type='' aaname='Weather' check:text='Weather' /&gt;" ImageBase64="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" SearchSteps="FuzzySelector, Image" />
+                                              </scg:List>
+                                            </uix:TargetAnchorable.Anchors>
+                                          </uix:TargetAnchorable>
+                                        </uix:NGetText.Target>
+                                        <uix:NGetText.Text>
+                                          <OutArgument x:TypeArguments="x:String">[weather]</OutArgument>
+                                        </uix:NGetText.Text>
+                                      </uix:NGetText>
+                                      <ui:ExcelWriteCell Cell="[&quot;C&quot;+index.ToString]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="334,86.6666666666667" sap2010:WorkflowViewState.IdRef="ExcelWriteCell_2" SheetName="Sheet1" Text="[weather]" />
+                                      <ui:ExcelWriteCell Cell="[&quot;D&quot;+index.ToString]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="334,86.6666666666667" sap2010:WorkflowViewState.IdRef="ExcelWriteCell_3" SheetName="Sheet1" Text="Success" />
+                                    </Sequence>
+                                  </ActivityAction>
+                                </uix:NApplicationCard.Body>
+                                <uix:NApplicationCard.TargetApp>
+                                  <uix:TargetApp Area="-11, -11, 2582, 1550" BrowserType="Edge" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAARHSURBVFhHvZddbBRVFMf7YrAq+OSbD6Kgb0qUUh60xq9VtA8k1EJrH1CsGIM+GLUmBA0kFi0WSMCHLcVCTMO2GmjFCiUFpH60sUjMEtIGLaAWama32w92dt2vOf7PndPd3M7sdmobf8k/M/fec8//zJ07s7NFXrEsawlUnclkmqEBaAxKisLS14yYKo6VafMHyR5A4hYoTh5BbAw6iLnLJc3cQZ7bkKQRSttp5w7mpqBdKKRY0noDE+7HxEuSZ94gVxA5l0n6wiDwYUwIyVyN9I0RMls/p4l33qDwi8+R4VtNxjOlFF7no/G3XyfzcBOlR/6UaB3kNHBYITbuyJU7zNOj12ly+/tkPL2KjKdKCgsxkx++p+bMhIvIuxIYuB0BjmWPn+qi0Atl7mYFFCp/nP45e0qy5IAH3w7nnsBAo8RkMY8cck3uVVMN2yWTDrwaxNYGFfGjpu12vnK3pKxIbRVFD+yj+DdHKd51DOf7KfJatRYztbueyLIkmw68UtqtQEeLjCl4s4Wef0xLyBqrWUuJ8/0S5SQx0EfhDeV0c/+n0pMfeDYrc5zfiYb2konufdNhPr7lZbKmpiQiP5YZlbPCwNPEKizm5a+WPoUVG6ZU9yKarLsna86PXGYiIhELB7zX8/I3S1uRuVpPqZ5blMx9d1FozUqKnzwuowsLvP1cwIC0FelffNkCWImjS4lSKRldWODdzwWMSVuR6r1bKyB9sUpG3Hnyo6hnnb2kXwi8DS4gKW1F6vQirYDM79tkxB03o3xq/VGz4gIS/2sBLecSMstmuoCwtBWOWxDcICPuuBnlU3u/YwXULdA34YVntQJGeh+kZGbum/CKkXEUcG7QsQfUJpzxGH6cNT/etZQeDayljuEeGfVOoC/pKGB0Qn81w9vPLyJtm1uxqxTrKab6jkdoZWCdkq/jFQrHxyVidm7GLarYa2rmG/0xGc0B70ouYAkq0Ub39O3Imk+rpvtdmkjM/ipO4iet7khcM2e1Oe+/icMd6vcAjYN2t82NqEFlX73kKKL8683Ue/28RDm5PH6NNnUGYDipmfNqxBKO5W9S5gxWYTk6tB1y4lqvo4BpVXz7FjVeaKH2yyfoy99O0mfBVnq1ZyuVBCrUeOmhOnrik7+yBXw/pH/XwisJz/vE3gadu2Q8yxdDnQ5zrypp3Uhlu392PPsMvHaKbQ7082f4RTskR/cfP+B21LiaFFJpWyUdCHZKlhzw+BWHW8VWB8uyDAH89aoxaoZo6097aFWbvcSzafOZD2gwMiyzcyD33zjcK3buIGCFWxEMb87Dg8doy3c7aE1nLa1ur1RX6uvYRLWnt6m9MBS5ItE6bI4LfEhsCiMrEZS58wa5eNkLX/lMUEQxJjZA//ljAHP5j+tOnLrfcy/IavA/Yn5xeIJjoSbM1R+1+YBki6H1SOyH+iEDSoj4nPv8iKlEDfYbblaKiv4FoeF/NqqvoEMAAAAASUVORK5CYII=" InformativeScreenshot="0b2943b40ce868983dab1b2c3b827e44.png" Selector="&lt;html app='msedge.exe' title='Google'/&gt;" Url="https://www.google.co.in/" />
+                                </uix:NApplicationCard.TargetApp>
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                              </uix:NApplicationCard>
+                            </TryCatch.Try>
+                            <TryCatch.Catches>
+                              <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="404.666666666667,21.3333333333333" sap2010:WorkflowViewState.IdRef="Catch`1_2">
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                                <ActivityAction x:TypeArguments="s:Exception">
+                                  <ActivityAction.Argument>
+                                    <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
+                                  </ActivityAction.Argument>
+                                  <Sequence sap:VirtualizedContainerService.HintSize="376,280.666666666667" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                    <ui:ExcelWriteCell Cell="[&quot;D&quot;+index.ToString]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="334,86.6666666666667" sap2010:WorkflowViewState.IdRef="ExcelWriteCell_4" SheetName="Sheet1" Text="Fail" />
+                                    <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="334,62" sap2010:WorkflowViewState.IdRef="WriteLine_2" Text="Inside Exception" />
+                                  </Sequence>
+                                </ActivityAction>
+                              </Catch>
+                            </TryCatch.Catches>
+                            <TryCatch.Finally>
+                              <Assign sap:VirtualizedContainerService.HintSize="262,61.3333333333333" sap2010:WorkflowViewState.IdRef="Assign_2">
+                                <Assign.To>
+                                  <OutArgument x:TypeArguments="x:Int32">[index]</OutArgument>
+                                </Assign.To>
+                                <Assign.Value>
+                                  <InArgument x:TypeArguments="x:Int32">[index+1]</InArgument>
+                                </Assign.Value>
+                              </Assign>
+                            </TryCatch.Finally>
+                          </TryCatch>
+                        </Sequence>
+                      </ActivityAction>
+                    </ui:ForEachRow.Body>
+                  </ui:ForEachRow>
+                </Sequence>
+              </ActivityAction>
+            </ui:ExcelApplicationScope.Body>
+          </ui:ExcelApplicationScope>
+        </Sequence>
+      </TryCatch.Try>
+      <TryCatch.Catches>
+        <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="632.666666666667,21.3333333333333" sap2010:WorkflowViewState.IdRef="Catch`1_1">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <ActivityAction x:TypeArguments="s:Exception">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
+            </ActivityAction.Argument>
+            <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="230,62" sap2010:WorkflowViewState.IdRef="WriteLine_1" Text="Main Exception" />
+          </ActivityAction>
+        </Catch>
+      </TryCatch.Catches>
+    </TryCatch>
+  </Sequence>
+</Activity>
