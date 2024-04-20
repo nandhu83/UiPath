@@ -1,0 +1,188 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="English_And_Tamil_Translator" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1021.3333333333335,1807.3333333333333" sap2010:WorkflowViewState.IdRef="English_And_Tamil_Translator_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Excel.Activities.Business</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Security</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.ViewModels</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="English_And_Tamil_Translator" sap:VirtualizedContainerService.HintSize="546,1742.6666666666667" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Name="text" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser Chrome: Google Translate" sap:VirtualizedContainerService.HintSize="484,1632" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="943880f2-5c9a-487a-a333-56790aa59644" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,1412.6666666666667" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="x:String" Name="Output" />
+            </Sequence.Variables>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="388,246" sap2010:WorkflowViewState.IdRef="InputDialog_1" IsPassword="False" Label="Enter The Text To Be Translated" Title="Enter The Text To Be Translated">
+              <ui:InputDialog.Result>
+                <OutArgument x:TypeArguments="x:String">[text]</OutArgument>
+              </ui:InputDialog.Result>
+            </ui:InputDialog>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Source textclearClear'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="388,222.66666666666666" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="943880f2-5c9a-487a-a333-56790aa59644" Text="[text]" Version="V3">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="https://translate.google.co.in/" CvElementArea="322, 408, 950, 253" CvType="InputBox" DesignTimeRectangle="344, 430, 851, 48" DesignTimeScaleFactor="1.5" ElementType="InputBox" FriendlyName="'TEXTAREA'" FullSelectorArgument="&lt;webctrl tag='TEXTAREA' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TEXTAREA' type='' class='er8xn' aaname='' /&gt;" Guid="4a849428-790c-48bc-a0c4-feb1a2539a99" InformativeScreenshot="890b7d001687d30676d46ecfb463e6b9.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Google Translate' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CvTextArea="1096, 615, 73, 21" CvTextArgument="0 / 5,000" CvType="Text" DesignTimeRectangle="319, 411, 955, 248" FriendlyName="'Source textclearClear'" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;c-wiz&amp;gt;div&amp;gt;div&amp;gt;c-wiz&amp;gt;div&amp;gt;c-wiz&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;c-wiz' tag='C-WIZ' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' tag='C-WIZ' class='rm1UF UnxENd' aaname='' check:innerText='Source text&amp;#xD;&amp;#xA;0 / 5,000' /&gt;" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NTypeInto.Target>
+            </uix:NTypeInto>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'DIV'" sap:VirtualizedContainerService.HintSize="388,159.33333333333334" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="943880f2-5c9a-487a-a333-56790aa59644" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://translate.google.co.in/?sl=auto&amp;tl=en&amp;text=Hi&amp;op=translate" CvElementArea="1631, 358, 36, 33" CvType="ArrowButton" DesignTimeRectangle="1620, 345, 60, 60" DesignTimeScaleFactor="1.5" FriendlyName="'DIV'" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;c-wiz&amp;gt;div&amp;gt;div&amp;gt;c-wiz&amp;gt;div&amp;gt;c-wiz&amp;gt;div&amp;gt;div&amp;gt;c-wiz&amp;gt;div&amp;gt;c-wiz&amp;gt;div&amp;gt;button&amp;gt;div' idx='6' isleaf='1' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' class='VfPpkd-Bz112c-RLmnJb' isleaf='1' tag='DIV' aaname='' /&gt;" Guid="d64c9e8f-0072-41ca-838e-c4f7d55582ed" InformativeScreenshot="ec0f12b665e2fb2ea83c4da1786e8f87.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Google Translate' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target CvElementArea="1631, 358, 36, 33" CvType="ArrowButton" DesignTimeRectangle="1630, 358, 36, 33" ElementType="ArrowButton" FriendlyName="'chrome.exe Google'" SearchSteps="CV" TargetType="ComputerVisionBased" />
+                      <uix:Target DesignTimeRectangle="1243, 339, 72, 72" FriendlyName="'swap_horiz'" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;c-wiz&amp;gt;div&amp;gt;div&amp;gt;c-wiz&amp;gt;div&amp;gt;c-wiz&amp;gt;div&amp;gt;div&amp;gt;c-wiz&amp;gt;div&amp;gt;c-wiz&amp;gt;div&amp;gt;div' idx='2' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' class='' tag='DIV' aaname='' check:innerText='swap_horiz' /&gt;" SearchSteps="FuzzySelector" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                  <uix:TargetAnchorable.PointOffset>
+                    <uix:PointOffset X="-4" Y="-4" />
+                  </uix:TargetAnchorable.PointOffset>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Search languages'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="388,222.66666666666666" sap2010:WorkflowViewState.IdRef="NTypeInto_2" ScopeIdentifier="943880f2-5c9a-487a-a333-56790aa59644" Text="Tamil[k(enter)]" Version="V3">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="https://translate.google.co.in/" CvTextArea="414, 441, 193, 28" CvTextArgument="Search languages" CvType="Text" DesignTimeRectangle="392, 414, 1846, 81" DesignTimeScaleFactor="1.5" ElementType="InputBox" FriendlyName="'INPUT'" FullSelectorArgument="&lt;webctrl idx='2' tag='INPUT' type='text' /&gt;" FuzzySelectorArgument="&lt;webctrl class='yFQBKb' tag='INPUT' type='text' aaname='' /&gt;" Guid="f182978e-9462-4363-8cc5-7ad5b6aff778" InformativeScreenshot="f2465562397751dd10ed713164db6572.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Google Translate' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CvTextArea="414, 441, 193, 28" CvTextArgument="Search languages" CvType="Text" DesignTimeRectangle="414, 441, 192, 28" ElementType="Text" FriendlyName="'Search languages'" SearchSteps="CV" TargetType="ComputerVisionBased" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NTypeInto.Target>
+            </uix:NTypeInto>
+            <uix:NGetText DisplayName="Get Text 'வருகிறேன்'" sap:VirtualizedContainerService.HintSize="388,159.33333333333334" sap2010:WorkflowViewState.IdRef="NGetText_1" ScopeIdentifier="943880f2-5c9a-487a-a333-56790aa59644" TextString="[Output]" Version="V3">
+              <uix:NGetText.Target>
+                <uix:TargetAnchorable BrowserURL="https://translate.google.co.in/?sl=auto&amp;tl=ta&amp;text=Bye&amp;op=translate" CvElementArea="1286, 408, 949, 252" CvType="InputBox" DesignTimeRectangle="1310, 435, 182, 43" DesignTimeScaleFactor="1.5" ElementType="Text" FriendlyName="'வருகிறேன்'" FullSelectorArgument="&lt;webctrl class='ryNqvb' parentid='ow291' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl class='ryNqvb' parentid='ow291' tag='SPAN' type='' /&gt;" Guid="3c907f57-c0d8-4d91-b05f-cc6f2f2a34e9" InformativeScreenshot="d2ada6f6a2e7f7a6cfccf962876700ad.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Google Translate' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target DesignTimeRectangle="1504, 434, 36, 36" ElementType="Icon" FriendlyName="'SVG'" FullSelectorArgument="&lt;webctrl parentid='ow295' tag='svg' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='ow295' tag='svg' type='' class='tQLSFf NMm5M' aaname='' /&gt;" SearchSteps="FuzzySelector" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NGetText.Target>
+            </uix:NGetText>
+            <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="388,86.66666666666667" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[Output]" />
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-11, -11, 2582, 1550" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAI/SURBVDhPhZLLaxNRFIdn5cL/yZXQR5o22lYs2E2hRdyIC8GFoLEE8mxSfCRtzMK2NCDUmGJJ22xi0QYSGyoTk8zkMXknUAWnTmbl4ue5M5lQtLUHftxhuN93z5w73G2vHJpeVjDlU3CTxavgBsWypGDG1bjGXVYMnF5WMUWZZPGpJFJJosJiP1nrb7u4JklwLkyZcH//bbXmrvS3nl+sbQP+W2BZUvF8qyqIYulDtVrdbjab0Xq9GZWkerRWq73P58szHPtmBt4NqUiLMqSWjMOcrL2bIMH90An4bAGtVhvdbhedTkdLu90GCcGxgbETvxD8bIuGR8+zfh0e97Auevh4yEMQSxr0j2CCps2geventr7YVSDUZXyTZE1gpqxEy+D5HOafujTQSKPRIIGHXZneweI7RTvZFlGQ4E812OxWccdThGNlA55QGM7QJh75gngZjuiCcRIwaP61ipQgo9aVSXaKudWeBo9R2CGBzRg+pzJYj+wglvhEM2npArNbGbQ6CEEGbHL1MErxhXk89gZh879BqVQC3YouGHMpA+AseBYedfZwL9DAQ4cftsAaBEFApVKBJEngTCQwAAMagH14hGJyyogn0tiOJ2APrqNYLKFcLoMbWvzxasTxC0aG+xmy6yuDhx16NvbLKBQEHCRTEEVRF/yvrNajq9dvxcBimdtH4uArtS9qMJvDpQJWCw/iNfPsHnZ2j5DN5rQODAFLf9vF9cSxt/A2kkQmc0w/Uxb5fJ4kBW2QyfTx6h8fcX0dWzi39AAAAABJRU5ErkJggg==" InformativeScreenshot="1a07b3e90c6546df841bcf89a6fce7e6.jpg" Selector="&lt;html app='chrome.exe' title='Google Translate' /&gt;" Title="Google Translate" Url="https://translate.google.co.in/" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>

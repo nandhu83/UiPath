@@ -1,0 +1,233 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Trading_Bot" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1021.33333333333,2616" sap2010:WorkflowViewState.IdRef="Trading_Bot_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.Excel.Activities.Business</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.CSV</x:String>
+      <x:String>UiPath.CSV.Activities</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>System.Activities.DynamicUpdate</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
+      <x:String>UiPath.DataTableUtilities</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Runtime.InteropServices</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.Platform.Triggers</x:String>
+      <x:String>UiPath.Platform.Triggers.Scope</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+      <x:String>UiPath.CV</x:String>
+      <x:String>UiPath.Shared.ObjectLibrary</x:String>
+      <x:String>UiPath.CV.Activities</x:String>
+      <x:String>UiPath.CV.Activities.Interfaces</x:String>
+      <x:String>UiPath.Vision.OCR</x:String>
+      <x:String>UiPath.OCR.Contracts</x:String>
+      <x:String>UiPath.OCR.Contracts.Activities</x:String>
+      <x:String>UiPath.Core.Activities.OCR.Engines</x:String>
+      <x:String>Microsoft.VisualBasic.CompilerServices</x:String>
+      <x:String>UiPath.Mail</x:String>
+      <x:String>UiPath.Mail.SMTP.Activities</x:String>
+      <x:String>UiPath.Mail.Activities</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.Web.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>Microsoft.Bcl.AsyncInterfaces</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.CV</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.CV.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Vision.Core</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Contracts</AssemblyReference>
+      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
+      <AssemblyReference>UiPath.Mail</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities.Design</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Trading_Bot" sap:VirtualizedContainerService.HintSize="740.666666666667,2551.33333333333" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Name="value" />
+      <Variable x:TypeArguments="sd:DataTable" Name="data" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser Edge: Bitcoiva - The Best Cryptocurrency Exchange" sap:VirtualizedContainerService.HintSize="678.666666666667,2440.66666666667" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="e476cdab-d15e-45fe-a9a8-359b50dddf84" Version="V1">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="644.666666666667,2221.33333333333" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ui:ReadRange AddHeaders="True" DataTable="[data]" DisplayName="Read Range" sap:VirtualizedContainerService.HintSize="582.666666666667,88" sap2010:WorkflowViewState.IdRef="ReadRange_1" SheetName="Sheet1" WorkbookPath="Trade.xlsx">
+              <ui:ReadRange.Range>
+                <InArgument x:TypeArguments="x:String">
+                  <Literal x:TypeArguments="x:String" Value="" />
+                </InArgument>
+              </ui:ReadRange.Range>
+            </ui:ReadRange>
+            <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[data]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="582.666666666667,1977.33333333333" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+              <ui:ForEachRow.Body>
+                <ActivityAction x:TypeArguments="sd:DataRow">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="sd:DataRow" Name="Row" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="548.666666666667,1852.66666666667" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                    <Sequence.Variables>
+                      <Variable x:TypeArguments="x:String" Name="alert" />
+                    </Sequence.Variables>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'INPUT'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="486.666666666667,221.333333333333" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="e476cdab-d15e-45fe-a9a8-359b50dddf84" Text="[Row(1).ToString + &quot;[k(enter)]&quot;]" Version="V1">
+                      <uix:NTypeInto.Target>
+                        <uix:TargetAnchorable BrowserURL="https://www.bitcoiva.com/" DesignTimeRectangle="1712, 759, 257, 57" ElementType="InputBox" FriendlyName="'INPUT'" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;header&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;input' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl type='text' tag='INPUT' aaname='' /&gt;" Guid="3b1e32d4-3069-4dce-b7ad-1f809fd31660" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAQUAAAA9CAYAAACkyHzlAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAJjSURBVHhe7dRBchQxDAVQDgBUhROwZMsFuFXOH8oLU5KR26Yz9CSZt3hVifTlVc//9Pnr0wtApxSA5E8pfPvxC3hgZSl8+f4TeEBKAUiUApAoBSBRCkCiFIBEKQCJUgASpQAkSgFIlAKQKAUgUQpAohSARCkAiVIAEqUAJEoBSJQCkNylFJ6fn0tVFrjW5aVQlUFU3QDXubQUjn78RzvgOpeVwu6PXjHAfV1eCtUuUghwX2+uFCqr29l+nPf/q9lRptrNMt24jzdxPjPmx5vZfLSTgehhSqH/HWe7mWoXxdyYj3+PxpuuynZVLs6i1R4ql5RC/zjPfqCr29m+z3dudzL/suvzW+2qeZWLVnuoPEQpjPNolTn7xuru6GZ2d3QTZ0dzWFEKi8zZN1Z3Z24qs5szb0FzSSk0r/lIV7ez/equWWX6fkd1F2fRmZvK7ObMW9AohUWm73dUd3EWnbmZGe/OvgPNmyuFKrO6ne1Xd80qs/NG5cy7q5uZ8e7sO9BcXgqrj7XKrO5m+9Vds8rsvFE5826fre5W86N7WLmsFJr+wVcf7f/cjfPotZm+G/dHN81s3+dHu3Eed0cZ2HFpKTTjxzuqbpoq28Td7GacRzuZpudmZvlx3h3t+65S5ZvdHKxcXgrN+AF3VTaa5cf/V/NoJ9P1bFTlmlvtoyoX7ebgyF1Kgf9DKXALSuEDUQrcglL4IBQCt6IU3rleBkqBW1EK75xC4NaUApAoBSBRCkCiFIBEKQCJUgASpQAkSgFIlAKQKAUgUQpAohSARCkAiVIAkmkpAI/rr1IAaJQCEDy9/Aaqmbxs+UMG5wAAAABJRU5ErkJggg==" InformativeScreenshot="46f4361686c313a7542a53ade6b2760b.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Bitcoiva - The Best Cryptocurrency Exchange' /&gt;" SearchSteps="FuzzySelector, Image">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                              <uix:Target DesignTimeRectangle="1981, 759, 104, 52" ElementType="Button" FriendlyName="'Search'" FullSelectorArgument="&lt;webctrl tag='BUTTON' type='submit' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='BUTTON' type='submit' aaname='Search' check:text='Search' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAGwAAAA4CAYAAAAYeR0sAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAJWSURBVHhe7ZxBTsQwDEU5AAJGQiMQSICmYsHtOAjn4lgFz8ijTPqdNKRNY/EXb1Hbseo8teqmubq+2Y3EDxTmjKSwu/1+3L8+j4/vb+PTx/DLgazCcNxj2WvZc+RCgcJu7+/Hh8MLaExaIHsvDpCbiTAxzKepBwb4tF0IE6uU1RPD5Em7EMbXYH+Ik9DRWdjpVYgXkW0JX41nYfKFgorJ9oibibDTpzteQLZF3EyE8WOjZwYkDBWSXqAwZ1CYMyjMGRTmDApzBoU5g8KcQWEVfH5/HUG5tWgmTIeLQbVe2GKGJsKswTTeeuil2OLeVxeWG8qrLOFfCvMMhUXo2jk95taG+VSt5kKsGlQf1y7F6sKEvwyB6q0+pbVWTkmtQzErHsaWoqmwuUNYtShu9SzpEZLqh2Il8SVoIixEh7GGsuJKLh9S2r+kt5DrheK1NBcWggZObYKQy4egutT6kt5CrheK17KpMCEeWq9zoB6IsC6sjeO5HCLXC8Vr6VZYWJMiVY/iuXorh8j1QvFaKGxmDpHrheK1rC4stwkon6uPr1F9aVwpyaV6pfrU0EwYGsCKaw7F4rjVozQeMnddqpcVr2V1YYoOF4Nqlbn1Vl18Hcb02iJca62x4ppD8VqaCSPLQGHOoDBnUJgzKMwZFOYMCnMGhTmDwpwBhPEPzH4Bf2DyH+d+gf848xSBfoGnCPCcjn6B53QIPAmnP8yTcASeNdUbmbOmhNOrkdK2Z8ZpbopY5etxO2Tv4ydLgcIUMSxfKKdPfj5161F5IinpFwpzBoW5Yjf+AOohpibToW0SAAAAAElFTkSuQmCC" SearchSteps="FuzzySelector, Image" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NTypeInto.Target>
+                    </uix:NTypeInto>
+                    <uix:NClick ClickType="Single" DisplayName="Click 'Search'" sap:VirtualizedContainerService.HintSize="486.666666666667,159.333333333333" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="e476cdab-d15e-45fe-a9a8-359b50dddf84" Version="V1">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="https://www.bitcoiva.com/" DesignTimeRectangle="1981, 851, 104, 52" ElementType="Button" FriendlyName="'Search'" FullSelectorArgument="&lt;webctrl tag='BUTTON' type='submit' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='BUTTON' type='submit' aaname='Search' check:text='Search' /&gt;" Guid="dbe2d16d-6cca-4cb1-a399-ff5f1e830899" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAGwAAAA4CAYAAAAYeR0sAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAJPSURBVHhe7ZxRTsMwDIY5AAImoQkEEqBVPHA7DsK5OFbBmzxl6e+kIW0ai//he6jtWHM+NerLcnV9sxuJHyjMGUlhd/v9uH99Hh/f38anj+GXA1mF4bjHstey58iFAoXd3t+PD4cX0Ji0QPZeHCA3E2FimG9TDwzwbbsQJlbxYrINw+RNuxDGY7A/xEno6CzsdBTiRWRbwqPxLEy+UFAx2R5xMxF2+nTHC8i2iJuJMFRIemGgMG9QmDMozBkU5gwKcwaFOYPCnEFhzqCwCj6/v46g3Fo0E6bDxaBaL2wxQxNh1mAabz30Umzx21cXlhvKqyzhXwrzDIVF6No5PebWhvlUreZCrBpUH9cuxerChL8MgeqtPqW1Vk5JrUMxKx7GlqKpsLlDWLUobvUs6RGS6odiJfElaCIsRIexhrLiSi4fUtq/pLeQ64XitTQXFoIGTm2CkMuHoLrU+pLeQq4XiteyqTAhHlqfc6AeiLAurI3juRwi1wvFa+lWWFiTIlWP4rl6K4fI9ULxWihsZg6R64XitawuLLcJKJ+rj59RfWlcKcmleqX61NBMGBrAimsOxeK41aM0HjJ3XaqXFa9ldWGKDheDapW59VZd/BzG9NkiXGutseKaQ/Famgkjy0BhzqAwZ1CYMyjMGRTmDApzBoU5g8KcQWGuAP/A5H+c+wX+x5m3CPQLvEWA93T0C7ynQ+BNOP1h3oQj8K6p3sjcNSXwaOyFGbe5KWKVx+N2yN7Hb5YChSliWL5QTp/8vENxPSpvJCX9QmHOoDBX7MYfHBqmIS2EzncAAAAASUVORK5CYII=" InformativeScreenshot="ae3588077972cd10e09e2e5dd3c680d4.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Bitcoiva - The Best Cryptocurrency Exchange' /&gt;" SearchSteps="FuzzySelector, Image" />
+                      </uix:NClick.Target>
+                    </uix:NClick>
+                    <uix:NClick ClickType="Single" DisplayName="Click 'Trade'" sap:VirtualizedContainerService.HintSize="486.666666666667,159.333333333333" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="e476cdab-d15e-45fe-a9a8-359b50dddf84" Version="V1">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="https://www.bitcoiva.com/" DesignTimeRectangle="1960, 1030, 229, 52" ElementType="Button" FriendlyName="'Trade'" FullSelectorArgument="&lt;webctrl parentid='pills-1' tag='BUTTON' type='submit' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='pills-1' tag='BUTTON' type='submit' aaname='Trade' check:text='Trade' /&gt;" Guid="bddb5462-358d-450b-8cc1-558a649c6b3b" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAOkAAAA4CAYAAAAYVd9pAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAALNSURBVHhe7d1BbtswFIThHqBoEsAQUjRAUljoorfrQXquHkvNi8GAlobUo8NQb/EvPqAVZ5INBzachb98/fawAIiLkQLBVUd6P03L9PK0fP/1c/nxe351BtDF/LYr25ftTO0vkSO9O52Wx/Oz+MEAPoPtzXan9rgZqa2aV03gCLN8Vb0aqS2ZgQJHmjevqFcj5S0ucDzbYb7L95Fe3ubqEoCx8re97yO1T5lUGMB4tsfNSC9/ZtEFAGPZHjcj5QMjIJJZjVQFARyFkQLBMVIgOEYKBMdIgeAYKRAcIwWCY6RAcIy0sz///jZp6eW/p8Sbz3OK6iQqX6L6aMNIO1MXtaa1l/8uxZvNczUf6RrVRxtGOoDnwu5l0rkns/634j1Xmb0u+mKkA3gudY9Mft6SLSllPF30w0gH8FzqHpn8vCVbo3LeLvpgpAN4LvVeJp2XMuqsNa+onLeLPhjpAJ5LnTJ7VNeo81qndpZTufRsT97B7RjpAJ5Lm1/uEtVLVKbWq53lVC4925N3cDtGOoDn0pYyLd2aUmf9fE3lvF30wUgH8FzqUiY9r/XzTEmps36+pnLeLvpgpAN4LnUtc+tZojKenvlIF30w0gE8l7qWSWfqvNZLVObWXu05PgcjHcBzqfcy6Xyd2euZW3rpXGX2uuiLkQ7gudS3ZDydpNTdk/+M1q5RfbRhpAN4LmxLJuU8nWSdTf8vybtrKl+i+mjDSIHgGCkQHCMFgmOkQHCMFAiOkQLBMVIgOEYKBMdIgeAYKRCcGCnf9A3EIb7p276jX4cBjGZ73Ix0enmSYQDj2R43I72fJhkGMJ7tcTNS83h+lgUA49gO811ejfTudHoN8QEScJz5bYf5Lq9Gai5vexkqMN589TY32YzU2JJ56wuMY3tbv4ImcqSJrdo+Zbr8eYZXV6Cf+W1Xti/16pmrjhTA8RgpEBwjBUJ7WP4DZOQf3jvNpWUAAAAASUVORK5CYII=" InformativeScreenshot="baa5a38b72d4119343a7c7ac3a45d0c3.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Bitcoiva - The Best Cryptocurrency Exchange' /&gt;" SearchSteps="FuzzySelector, Image" />
+                      </uix:NClick.Target>
+                    </uix:NClick>
+                    <uix:NGetText DisplayName="Get Text 'BDX/INR'" sap:VirtualizedContainerService.HintSize="486.666666666667,159.333333333333" sap2010:WorkflowViewState.IdRef="NGetText_3" ScopeIdentifier="e476cdab-d15e-45fe-a9a8-359b50dddf84" Version="V1">
+                      <uix:NGetText.Target>
+                        <uix:TargetAnchorable BrowserURL="https://www.bitcoiva.com/exchange/BDX_INR" DesignTimeRectangle="628, 154, 49, 29" ElementType="Text" FriendlyName="'4.36'" FullSelectorArgument="&lt;webctrl aaname='4.36' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='SPAN' type='' /&gt;" Guid="84185457-c003-469b-8e03-be346255360d" InformativeScreenshot="e459bb47d9e7a26ce9b7bc3631573ba1.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Bitcoiva - The Best Cryptocurrency Exchange' /&gt;" SearchSteps="FuzzySelector">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                              <uix:Target DesignTimeRectangle="301, 154, 98, 29" ElementType="Text" FriendlyName="'BDX/INR'" FullSelectorArgument="&lt;webctrl tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='SPAN' type='' aaname=' BDX/INR ' check:text='BDX/INR' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAGYAAAAhCAYAAAArgt62AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAH7SURBVGhD7ZXBbRxBDASdgHNwCsrBGTs0ByBjHmMUWt0c3h6gm1vMox7LKi5wIKT98fPXx+dhP85hNuUcZlPOYTblHGZTzmE25RxmU85hNuW2h/n75/d/nN+dL4fhD6rQve5uZ0ebSbcbuI4zR9pXR6qGrkL3BpcPM7i6u9pT320mqePcsWrpXVe5Fbr7ksMMVrtd50gt545VS++6ynXgbnkYdeq1SXPnXZNcmidWLd+XOm0mVVc557Xh/FsPM6gauundrKLTskmdNpOqq5zz2nD+1GEecRM2rlNPtHV0ejap04akjnN1zmvD+eVvjO7prvMDNqnTJnWOTs/3plY9n+fMdYTOeW04v9Vhuj271Krn85y5jtB14O7lwwyqXXUTNqnTJnVKt2eXWuc5m3N9JnQrdPelH3/XqSfaKo92Ve88Z3Ouz4SuQvcGDx9mkJo0J2xcp06fE91uwDb1yXOusHPtak5eepiO44xzpdNM2Ka+8nRk1XXd4Fv/ldFrc9Vp45zCd6WdytORVdd1g6c+/oOru9zT3cqtvDrCzpFazp1P3SNe3VOHubq72lO/atJcYedILefOp+4Zf/kwutfdXe2oJ6nV5wR3HanlnLBx3cpXzZfDvBvuR92Bc5hNeevD3PUog7f/i7kr5zCbcg6zKecwm3IOsyUfn/8AlSrP+V84jaAAAAAASUVORK5CYII=" SearchSteps="FuzzySelector, Image" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NGetText.Target>
+                      <uix:NGetText.Text>
+                        <OutArgument x:TypeArguments="x:String">[value]</OutArgument>
+                      </uix:NGetText.Text>
+                    </uix:NGetText>
+                    <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="486.666666666667,86.6666666666667" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[&quot;Price Of Your Stock Is &quot;+ value + &quot; INR&quot;]" />
+                    <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="486.666666666667,246" sap2010:WorkflowViewState.IdRef="InputDialog_1" IsPassword="False" Label="Give me the value on which you need to get a alert" Title="Give me the value on which you need to get a alert">
+                      <ui:InputDialog.Result>
+                        <OutArgument x:TypeArguments="x:String">[alert]</OutArgument>
+                      </ui:InputDialog.Result>
+                    </ui:InputDialog>
+                    <If Condition="[value = alert]" sap:VirtualizedContainerService.HintSize="486.666666666667,467.333333333333" sap2010:WorkflowViewState.IdRef="If_1">
+                      <If.Then>
+                        <Sequence sap:VirtualizedContainerService.HintSize="450,272" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <ui:SendMail Bcc="{x:Null}" Cc="{x:Null}" Email="{x:Null}" From="{x:Null}" MailMessage="{x:Null}" Name="{x:Null}" Password="{x:Null}" Port="{x:Null}" ReplyTo="{x:Null}" SecurePassword="{x:Null}" Server="{x:Null}" TimeoutMS="{x:Null}" Body="Now it is a suitable time to buy the coin." DisplayName="Send SMTP Mail Message" EnableSSL="True" sap:VirtualizedContainerService.HintSize="388,156" sap2010:WorkflowViewState.IdRef="SendMail_1" IsBodyHtml="False" SecureConnection="Auto" Subject="alert" To="[Row(2).ToString]">
+                            <ui:SendMail.Files>
+                              <scg:List x:TypeArguments="InArgument(x:String)" Capacity="0" />
+                            </ui:SendMail.Files>
+                          </ui:SendMail>
+                        </Sequence>
+                      </If.Then>
+                      <If.Else>
+                        <Sequence sap2010:WorkflowViewState.IdRef="Sequence_5">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </Sequence>
+                      </If.Else>
+                    </If>
+                  </Sequence>
+                </ActivityAction>
+              </ui:ForEachRow.Body>
+            </ui:ForEachRow>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-11, -11, 2582, 1550" BrowserType="Edge" IconBase64="iVBORw0KGgoAAAANSUhEUgAAAC0AAAAwCAYAAACFUvPfAAAABGdBTUEAALGOfPtRkwAAACBjSFJNAACHDwAAjA8AAP1SAACBQAAAfXkAAOmLAAA85QAAGcxzPIV3AAAKOWlDQ1BQaG90b3Nob3AgSUNDIHByb2ZpbGUAAEjHnZZ3VFTXFofPvXd6oc0wAlKG3rvAANJ7k15FYZgZYCgDDjM0sSGiAhFFRJoiSFDEgNFQJFZEsRAUVLAHJAgoMRhFVCxvRtaLrqy89/Ly++Osb+2z97n77L3PWhcAkqcvl5cGSwGQyhPwgzyc6RGRUXTsAIABHmCAKQBMVka6X7B7CBDJy82FniFyAl8EAfB6WLwCcNPQM4BOB/+fpFnpfIHomAARm7M5GSwRF4g4JUuQLrbPipgalyxmGCVmvihBEcuJOWGRDT77LLKjmNmpPLaIxTmns1PZYu4V8bZMIUfEiK+ICzO5nCwR3xKxRoowlSviN+LYVA4zAwAUSWwXcFiJIjYRMYkfEuQi4uUA4EgJX3HcVyzgZAvEl3JJS8/hcxMSBXQdli7d1NqaQffkZKVwBALDACYrmcln013SUtOZvBwAFu/8WTLi2tJFRbY0tba0NDQzMv2qUP91829K3NtFehn4uWcQrf+L7a/80hoAYMyJarPziy2uCoDOLQDI3fti0zgAgKSobx3Xv7oPTTwviQJBuo2xcVZWlhGXwzISF/QP/U+Hv6GvvmckPu6P8tBdOfFMYYqALq4bKy0lTcinZ6QzWRy64Z+H+B8H/nUeBkGceA6fwxNFhImmjMtLELWbx+YKuGk8Opf3n5r4D8P+pMW5FonS+BFQY4yA1HUqQH7tBygKESDR+8Vd/6NvvvgwIH554SqTi3P/7zf9Z8Gl4iWDm/A5ziUohM4S8jMX98TPEqABAUgCKpAHykAd6ABDYAasgC1wBG7AG/iDEBAJVgMWSASpgA+yQB7YBApBMdgJ9oBqUAcaQTNoBcdBJzgFzoNL4Bq4AW6D+2AUTIBnYBa8BgsQBGEhMkSB5CEVSBPSh8wgBmQPuUG+UBAUCcVCCRAPEkJ50GaoGCqDqqF6qBn6HjoJnYeuQIPQXWgMmoZ+h97BCEyCqbASrAUbwwzYCfaBQ+BVcAK8Bs6FC+AdcCXcAB+FO+Dz8DX4NjwKP4PnEIAQERqiihgiDMQF8UeikHiEj6xHipAKpAFpRbqRPuQmMorMIG9RGBQFRUcZomxRnqhQFAu1BrUeVYKqRh1GdaB6UTdRY6hZ1Ec0Ga2I1kfboL3QEegEdBa6EF2BbkK3oy+ib6Mn0K8xGAwNo42xwnhiIjFJmLWYEsw+TBvmHGYQM46Zw2Kx8lh9rB3WH8vECrCF2CrsUexZ7BB2AvsGR8Sp4Mxw7rgoHA+Xj6vAHcGdwQ3hJnELeCm8Jt4G749n43PwpfhGfDf+On4Cv0CQJmgT7AghhCTCJkIloZVwkfCA8JJIJKoRrYmBRC5xI7GSeIx4mThGfEuSIemRXEjRJCFpB+kQ6RzpLuklmUzWIjuSo8gC8g5yM/kC+RH5jQRFwkjCS4ItsUGiRqJDYkjiuSReUlPSSXK1ZK5kheQJyeuSM1J4KS0pFymm1HqpGqmTUiNSc9IUaVNpf+lU6RLpI9JXpKdksDJaMm4ybJkCmYMyF2TGKQhFneJCYVE2UxopFykTVAxVm+pFTaIWU7+jDlBnZWVkl8mGyWbL1sielh2lITQtmhcthVZKO04bpr1borTEaQlnyfYlrUuGlszLLZVzlOPIFcm1yd2WeydPl3eTT5bfJd8p/1ABpaCnEKiQpbBf4aLCzFLqUtulrKVFS48vvacIK+opBimuVTyo2K84p6Ss5KGUrlSldEFpRpmm7KicpFyufEZ5WoWiYq/CVSlXOavylC5Ld6Kn0CvpvfRZVUVVT1Whar3qgOqCmrZaqFq+WpvaQ3WCOkM9Xr1cvUd9VkNFw08jT6NF454mXpOhmai5V7NPc15LWytca6tWp9aUtpy2l3audov2Ax2yjoPOGp0GnVu6GF2GbrLuPt0berCehV6iXo3edX1Y31Kfq79Pf9AAbWBtwDNoMBgxJBk6GWYathiOGdGMfI3yjTqNnhtrGEcZ7zLuM/5oYmGSYtJoct9UxtTbNN+02/R3Mz0zllmN2S1zsrm7+QbzLvMXy/SXcZbtX3bHgmLhZ7HVosfig6WVJd+y1XLaSsMq1qrWaoRBZQQwShiXrdHWztYbrE9Zv7WxtBHYHLf5zdbQNtn2iO3Ucu3lnOWNy8ft1OyYdvV2o/Z0+1j7A/ajDqoOTIcGh8eO6o5sxybHSSddpySno07PnU2c+c7tzvMuNi7rXM65Iq4erkWuA24ybqFu1W6P3NXcE9xb3Gc9LDzWepzzRHv6eO7yHPFS8mJ5NXvNelt5r/Pu9SH5BPtU+zz21fPl+3b7wX7efrv9HqzQXMFb0ekP/L38d/s/DNAOWBPwYyAmMCCwJvBJkGlQXlBfMCU4JvhI8OsQ55DSkPuhOqHC0J4wybDosOaw+XDX8LLw0QjjiHUR1yIVIrmRXVHYqLCopqi5lW4r96yciLaILoweXqW9KnvVldUKq1NWn46RjGHGnIhFx4bHHol9z/RnNjDn4rziauNmWS6svaxnbEd2OXuaY8cp40zG28WXxU8l2CXsTphOdEisSJzhunCruS+SPJPqkuaT/ZMPJX9KCU9pS8Wlxqae5Mnwknm9acpp2WmD6frphemja2zW7Fkzy/fhN2VAGasyugRU0c9Uv1BHuEU4lmmfWZP5Jiss60S2dDYvuz9HL2d7zmSue+63a1FrWWt78lTzNuWNrXNaV78eWh+3vmeD+oaCDRMbPTYe3kTYlLzpp3yT/LL8V5vDN3cXKBVsLBjf4rGlpVCikF84stV2a9021DbutoHt5turtn8sYhddLTYprih+X8IqufqN6TeV33zaEb9joNSydP9OzE7ezuFdDrsOl0mX5ZaN7/bb3VFOLy8qf7UnZs+VimUVdXsJe4V7Ryt9K7uqNKp2Vr2vTqy+XeNc01arWLu9dn4fe9/Qfsf9rXVKdcV17w5wD9yp96jvaNBqqDiIOZh58EljWGPft4xvm5sUmoqbPhziHRo9HHS4t9mqufmI4pHSFrhF2DJ9NProje9cv+tqNWytb6O1FR8Dx4THnn4f+/3wcZ/jPScYJ1p/0Pyhtp3SXtQBdeR0zHYmdo52RXYNnvQ+2dNt293+o9GPh06pnqo5LXu69AzhTMGZT2dzz86dSz83cz7h/HhPTM/9CxEXbvUG9g5c9Ll4+ZL7pQt9Tn1nL9tdPnXF5srJq4yrndcsr3X0W/S3/2TxU/uA5UDHdavrXTesb3QPLh88M+QwdP6m681Lt7xuXbu94vbgcOjwnZHokdE77DtTd1PuvriXeW/h/sYH6AdFD6UeVjxSfNTws+7PbaOWo6fHXMf6Hwc/vj/OGn/2S8Yv7ycKnpCfVEyqTDZPmU2dmnafvvF05dOJZ+nPFmYKf5X+tfa5zvMffnP8rX82YnbiBf/Fp99LXsq/PPRq2aueuYC5R69TXy/MF72Rf3P4LeNt37vwd5MLWe+x7ys/6H7o/ujz8cGn1E+f/gUDmPP8usTo0wAAAAlwSFlzAAALEwAACxMBAJqcGAAAA5RJREFUaEPV2UeIFEEYhuExIpjTQRTMguJFUAyYA4aDsKaDoCB48uJJRPTgRQ+yhouiYFgDCIIgePAkeFFEFEQwYFZEEURcFMQ4vt+w/1Jb/j3Ts9szu314Franqvrr7qrq6u5CsVjMnUJz4+isDcRxbEP3lm2ZqUVoBT6LIr5gMzINnnXoIWiCAhsF3wivfLtkGXoo4sDmE9bDq1e1rEIr8Bl4gc17rIVXvypZhFbg0/CCxj5gNbx2Uuto6EGodIZjb7ESXnupdCT0ACjwX8TBHmAfmoNtoTdYDK/ditobuj/UJbzALzAfvbEJnxGXkZdQOa/9stoTui9O4jfiIAq8EFZW8/MaqC/HZeU55iBsv6JqQ6sPn0JS4GWI63TDKrxGXEfUlcYjrpeomtDlusQrrIBXzyzAffxBWFf/L4VXx5U2dLlBp8DL4dWLqet8RFhfVy3z0IORdKfTYNKl9+rFJuMcfiJsQydiLiahATqAfvDaKKkUejiSAqfpEkZB1DW8di5Bi6wD0AF8xeGWbV5bZUMrsM6MtyMNqjSBe2ILdAv32rmGEVBZBQ1/OwoN/LjNxNBardnyMvYYGlRevZDO1H58g9fODYyFymqGaURc5gQ0ntq07YUehqQuIbexE3tb7MYu7MB2aOG/FbrsXn25BfVh26fm82PwymqK1fqmNWMcWoPuPLzK5kf0v/qhpq1f0G/fkXR25R6mogfCMFq6JtW7AGUrlQ1D63LqR29ay8pDzID2NxHq07oy+l8HkXTbV6aLKAW30ONwFXHhLD3CPNhJ0l1QCyedXXVH6y4b4N32FfwyRlloHbWOUpdoXcbUphb/U2CBRYPwKSyQZiR7utHjmbdUkKbwTNc79AQ8g4Io9B3MxEhcQRxW3qHBQuuo69091B30QKCBq1Wj+usYXIdXX1diCTplIE6H9qcZRDPJHmieVuCb8OppubAIpaxhaKnHlHcXWofobjcLtu+D8Mo/QXiF/gst9bq5qE/bPnVzOYK4nLrUbIT53NDSGbdxLZjC3/VwYHN6G0mhpd4LJr37s+3qQtMQt1dSLrTUa2mqK6vpUeuMQ0gMLJVCiwZnUvCsHgL0VN4LeqTrA69+qzShpdaPW6X5N620oSV3D7Ymd68QTO5e1pjcvRYzuXsBaXL3qtfk7qW6yd3nC6PgSXfOLvmhyOTuk5zRkjRXHz+Ngtf2M7P+5I27satzN3ZtxcI/xQ9wyL/LmvAAAAAASUVORK5CYII=" InformativeScreenshot="37fd6b795b8b873f6182bb527f307f5a.png" Selector="&lt;html app='msedge.exe' title='Bitcoiva - The Best Cryptocurrency Exchange'/&gt;" Url="https://www.bitcoiva.com/" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>
