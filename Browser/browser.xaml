@@ -1,0 +1,127 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="browser" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="994,1158.66666666667" sap2010:WorkflowViewState.IdRef="browser_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="62">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>System.Activities.DynamicUpdate</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Runtime.InteropServices</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="29">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>Microsoft.Bcl.AsyncInterfaces</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="browser" sap:VirtualizedContainerService.HintSize="476,1094" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser Edge: Online Shopping site in India: Shop Online for Mobiles, Books, Watches, Shoes and " sap:VirtualizedContainerService.HintSize="434,1002" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="89424938-015b-4526-954a-bdc726890d8e" Version="V1">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="376,784" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="x:String" Name="Price" />
+            </Sequence.Variables>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'INPUT twotabsearchtextb…'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="334,220" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="89424938-015b-4526-954a-bdc726890d8e" Text="Iphone 14 Pro Max" Version="V1">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.amazon.in/" DesignTimeRectangle="537, 133, 1265, 57" ElementType="InputBox" FriendlyName="'INPUT twotabsearchtextb…'" FullSelectorArgument="&lt;webctrl tag='INPUT' type='text' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='text' aaname='Search Amazon.in' /&gt;" Guid="d7173967-4cd9-47b7-9ec0-d4ffc8bb0e37" ImageBase64="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" InformativeScreenshot="d13fd2a03751dc0647bcb9ee05414f78.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Online Shopping site in India: Shop Online for Mobiles, Books, Watches, Shoes and More - Amazon.in' /&gt;" SearchSteps="FuzzySelector, Image" />
+              </uix:NTypeInto.Target>
+            </uix:NTypeInto>
+            <uix:NClick ClickType="Single" DisplayName="Click 'Go'" sap:VirtualizedContainerService.HintSize="334,158" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="89424938-015b-4526-954a-bdc726890d8e" Version="V1">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.amazon.in/" DesignTimeRectangle="1802, 132, 68, 60" ElementType="Button" FriendlyName="'Go'" FullSelectorArgument="&lt;webctrl tag='INPUT' type='submit' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='submit' aaname='Go' check:text='Go' /&gt;" Guid="b2a950e0-ddab-4393-859c-022bcea11823" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAEgAAABACAYAAAC5vjEqAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAQKSURBVHhe7ZzLS1RRGMD9I9q0C6SVvWDmOqaTmoFpD+hhNhZEiyBbCC1MtPeDalO0kooyFRJfixa1anotC4o2Fe0Ce5JlCu1Ev+Z37cg4njwO3nNjZs6FH4z3fueT+5vvO/fcK9eiiTtlUqj86iqTkc6YvLgUlb6j6+TC/lVybHeJeKuLZdnyFT4FLSiTd1c9uXlkjS+qOrLSCZroLp+3j6pS1UQlFf1+1ibwbbip4Pj+4Ij8THbIxKN2Ge+Jz5FEJdFuRfJ30yUoJBA1PtwwK4l2o4qcoDTGnp6dU0m0mhOUAe2mBHF1c4Iy8Oekv4JYAjhBGpQgJmsnSIMSBE6QBifIgBNkwAky4AQZcIIMOEEGnCAD/0XQSH9CXt7cLV0d9dLcWClbN5VJWSzqw2f2cYwYYnU5wiJUQV+GEvLk2g45dahGaqtiEo1GJBLRwzFiiGUMY3U5bROaoM+DTdJ7sl7qNi4sJhNiGcNYcuhy2yQUQZzYjWO1sj7VQuqkqypK5cCOuNzuqJPnnTvlQ1+jD5/ZxzFilEzGkiNsSdYF0Rp8+0oONG4pl3sXty84v3CMmIM747PjyEGuMNvNuiDmD1pEnWRLU5W87d4jX4f08ekQ875njz9GjScXOXXxNrAqiCpgkqVNgGrghHWxC8EYxqo85Azr6mZVEJdprkR888wntMxiKicTxjCWHOQiJ7l1sUFjVRBrGTXJMuku5VtnLDnIRU5y6+KCxqogFnycEHBl0sVkAzlUPnLrYoLGqiBWxeqEuHzrYrKBHCofuXUxQWNVELcO6oRY4+hisoEcKh+5dTFB4wQZsCrIZottro5pY4LGqiCbk/ThfJik3WXegFsoGuBbd7caBoK+Wa3ZUCrJq3lyswpBPu6AynJP7hyvk08DeVJBsJgHZp8HEz58Zh/HiCE2XRBUVXgycHaL9ncFTSiCYCmPXGkrKid9f6kX8SXZrqTQBEE2D+29aFS2pRaaxDLn0FZUTnoMP/ecsNtuoQpSML9wmWYtw4KPVTG3Dl5KGJ/Zx7HXtxpSsXv9MUigYqicTEk22+2/CFoK/Wfq51WSzXbLOUEfU9VHW4XVbjknCJBEJYXRbjkpSBFGu+W0oH+128Z4qdy/vF07JltyWhDo2i3mReVG29Ifr0DOC1IgicpBVGJbhbwK6G4/bwRRSbRVZ2tdYHIgbwTZwgky4AQZcIIMOEEGnCADTpCBOYKmp6cFeFheaOjkgJLjv1BXyIJ0/HiY8Urm1NSUAI9GHQkZT7bLeKpywH+pd3JyUoBHBYUMf10ZfXxaxrrjfmsh6C6vhSeTSXHMZex2TN5c8eR8+j8WcNvMhqDRWzG53rxaWnel/WsKt81sCOptWSvn9pVIdFWx/AFntQGzrR3WbgAAAABJRU5ErkJggg==" InformativeScreenshot="b7c5b606a356a705e2ab9da867b04476.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Online Shopping site in India: Shop Online for Mobiles, Books, Watches, Shoes and More - Amazon.in' /&gt;" SearchSteps="FuzzySelector, Image" />
+              </uix:NClick.Target>
+            </uix:NClick>
+            <ui:GetValue ContinueOnError="{x:Null}" DisplayName="Get Text 'SPAN'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="GetValue_1">
+              <ui:GetValue.Target>
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="bf1bd92c-5481-44a7-9245-602a052ee8f9" InformativeScreenshot="ad9d8f1e858af69bcc72cb23eaef0b56" Selector="&lt;webctrl aaname='1,27,999' parentid='search' tag='SPAN' /&gt;">
+                  <ui:Target.TimeoutMS>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:Target.TimeoutMS>
+                  <ui:Target.WaitForReady>
+                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                  </ui:Target.WaitForReady>
+                </ui:Target>
+              </ui:GetValue.Target>
+              <ui:GetValue.Value>
+                <OutArgument x:TypeArguments="x:String">[Price]</OutArgument>
+              </ui:GetValue.Value>
+            </ui:GetValue>
+            <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="334,85.3333333333333" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[Price]" />
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-11, -11, 2582, 1550" BrowserType="Edge" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAF5SURBVDhPlVM9S8NQFBW0+QOO2h+gU9vdSbuLNP0HprtDfoBIhYKgWFyFLLpUC10EjbvawcFC4qJDm4CDllQdHHq9JzdfbYLUA4e8d98959738t4cESnMA2afOSuQC40Cg31EkrBtm3Rdp4qqklqtkmEYwUoKDRi4MhZ0u12az+VoYYowzIALg6GMBVqt5gs2ymWyLCuaL+fzQcYEhikDx3H8LkzTpMt2299C2EUG0gbYf6FUikRJZiBtEFaECbo5bjb/ZxAm79Xr/nxb06KY53l+LIG0QaFYjAQ4yOQfQTdTCAy+HJkycIBLfOIQ4AtRhbe1zmajd5fGFt+J+x1hZNBZJfqwEPgbt1sifNwlOoM0NBjcEJ3z8I4XR3E3KXwOiF5aUqy1iEjiDF4vxAS8WpMqvUOiJ2bviKtvSlXkoSDWA4P4Kr89SCJMkMwcB1/qrPATupa8H/4bYHCVGxhNAC0+n8Yd9LliNvzHhOd8wvxGZEYglzWk/AJk0E1AkKBI3AAAAABJRU5ErkJggg==" InformativeScreenshot="fc16efffc53277802b566b0cbae7b4a9.png" Selector="&lt;html app='msedge.exe' title='Online Shopping site in India: Shop Online for Mobiles, Books, Watches, Shoes and More - Amazon.in'/&gt;" Url="https://www.amazon.in/" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>
